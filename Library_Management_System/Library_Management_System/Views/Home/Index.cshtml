@@ -13,10 +13,10 @@
  @if (SignInManager.IsSignedIn(User))
     {
         <p>
-            <a asp-action="AddNewUser">Register New User</a>&nbsp   &nbsp
-            <a asp-action="IssuedBook">Issued Book</a>&nbsp  &nbsp
-            <a asp-action="Create">Add New Book</a>&nbsp  &nbsp
-            <a asp-action="Users">Active Users</a>&nbsp&nbsp
+            <a asp-action="AddNewUser" asp-controller="Dashboard">Register New User</a>&nbsp   &nbsp
+            <a asp-action="IssuedBook" asp-controller="Dashboard">Issued Book</a>&nbsp  &nbsp
+            <a asp-action="Create" asp-controller="Dashboard">Add New Book</a>&nbsp  &nbsp
+            <a asp-action="Users" asp-controller="Dashboard">Active Users</a>&nbsp&nbsp
         </p>
     }
         <h1>Books</h1>
